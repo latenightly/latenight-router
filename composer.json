@@ -1,0 +1,11 @@
+{
+    "name": "latenighthacks/latenight-router",
+    "description": "simple router",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Latenighthacks\\LatenightRouter\\": "src/"
+        }
+    },
+    "require": {}
+}

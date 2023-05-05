@@ -5,7 +5,7 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Latenightly\\LatenightRouter\\": "src/"
+            "Latenightly\\Router\\": "src/"
         }
     },
     "require": {}

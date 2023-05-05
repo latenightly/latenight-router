@@ -1,5 +1,5 @@
 {
-    "name": "latenightly/latenight-router",
+    "name": "latenightly/router",
     "description": "simple router",
     "minimum-stability": "alpha",
     "type": "library",

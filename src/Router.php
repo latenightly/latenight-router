@@ -6,6 +6,8 @@ class Router
 {
     protected $routes = [];
     protected $viewPath = __DIR__ . '/views';
+    protected $middleware = [];
+
 
     private function handlePlaceholderValue($pattern)
     {
@@ -34,6 +36,12 @@ class Router
 
     public function run()
     {
+        // Apply middleware to the request
+        foreach ($this->middleware as $middleware) {
+            $middleware->handle();
+        }
+
+        // Handle the request with the router
         $method = $_SERVER['REQUEST_METHOD'];
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -49,6 +57,12 @@ class Router
         http_response_code(404);
         return '404 Page Not Found';
     }
+
+    public function use($middleware)
+    {
+        $this->middleware[] = $middleware;
+    }
 }
 
 $app = new Router();
+

@@ -58,6 +58,13 @@ class Router
         return '404 Page Not Found';
     }
 
+
+    public function addMiddleware($middleware)
+    {
+        $this->middleware[] = $middleware;
+    }
+
+
     public function use($middleware)
     {
         $this->middleware[] = $middleware;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Latenight\Router;
+namespace Latenightly\Router;
 
 class Router
 {

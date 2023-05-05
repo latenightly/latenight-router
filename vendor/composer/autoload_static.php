@@ -9,12 +9,12 @@ class ComposerStaticInit9f3c57d6d027d816d8dcef0b59361f83
     public static $prefixLengthsPsr4 = array (
         'L' => 
         array (
-            'Latenighthacks\\LatenightRouter\\' => 31,
+            'Latenightly\\LatenightRouter\\' => 31,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Latenighthacks\\LatenightRouter\\' => 
+        'Latenightly\\LatenightRouter\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

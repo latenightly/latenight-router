@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Latenighthacks\\LatenightRouter\\' => array($baseDir . '/src'),
+    'Latenightly\\LatenightRouter\\' => array($baseDir . '/src'),
 );

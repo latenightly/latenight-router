@@ -1,6 +1,7 @@
 {
     "name": "latenighthacks/latenight-router",
     "description": "simple router",
+    "minimum-stability": "alpha",
     "type": "library",
     "autoload": {
         "psr-4": {
